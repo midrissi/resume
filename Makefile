@@ -15,6 +15,6 @@ coverletter.pdf: $(SRC_DIR)/coverletter.tex
 	$(CC) -output-directory=$(DIST_DIR) $<
 
 compress.pdf:
-	@for f in $(DIST_PDF); do ps2pdf -dPDFSETTINGS=/ebook "$$f" "$${f%.*}.min.pdf"; done
+	@for f in $(DIST_PDF); do ps2pdf "$$f" "$${f%.*}.min.pdf"; done
 clean:
 	GLOBIGNORE=.gitkeep rm -f $(DIST_DIR)/*
