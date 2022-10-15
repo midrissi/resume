@@ -1,3 +1,4 @@
+* Fix typos
 * Create the resume/coverletter base class
 * Init the resume
 * Init the cover letter
